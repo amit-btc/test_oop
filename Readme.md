@@ -1,42 +1,17 @@
-## Overview
 
-You have been hired by a company that builds a mobile app for coffee addicts.  You are 
-responsible for taking the user’s location and returning a list of the three closest coffee shops.
 
-## Input
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 
-The coffee shop list is a comma separated file with rows of the following form:
-`Name,Y Coordinate,X Coordinate`
+## To Run:
+```nodemon amit.js or node amit.js```
 
-The quality of data in this list of coffee shops may vary.  Malformed entries should cause the 
-program to exit appropriately. 
+## Input : 
+```47.6 -122.4 https://raw.githubusercontent.com/allinfra-ltd/test_oop/master/coffee_shops.csv?token=AA5HVELWEJRKDGHELZ6232DAOHE54```
 
-Your program will be executed directly from the command line and will be provided three 
-arguments in the following order:
-`<user x coordinate> <user y coordinate> <shop data url>`
-
-Notice that the data file will be read from an network location (ex: https://raw.githubusercontent.com/allinfra-ltd/test_oop/master/coffee_shops.csv?token=AA5HVELWEJRKDGHELZ6232DAOHE54)
-
-## Output
-
-Write a program that takes the user’s coordinates encoded as listed above and prints out a 
-newline­separated list of the three closest coffee shops (including distance from the user) in 
-order of closest to farthest.  These distances should be rounded to four decimal places. 
-
-Assume all coordinates lie on a plane.
-
-## Example
-
-Using the [coffee_shops.csv](coffee_shops.csv)
-
-__Input__
-
-`47.6 -122.4 coffee_shops.csv`
-
-__Expected output__
+## Output : 
 
 ```
-Starbucks Seattle2,0.0645
-Starbucks Seattle,0.0861
-Starbucks SF,10.0793
+Starbucks Seattle2 , 0.0645
+Starbucks Seattle , 0.0861
+Starbucks SF , 10.0793
 ```
